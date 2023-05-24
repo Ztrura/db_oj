@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/guang.png">
+    <!-- <img alt="Vue logo" src="../assets/guang.png"> -->
     <!-- <h2>Welcome to Our Sql Online Judge System</h2> -->
     <HelloWorld msg="Welcome to Our Sql Online Judge System"/>
   </div>

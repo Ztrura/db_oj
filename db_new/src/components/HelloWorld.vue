@@ -3,12 +3,12 @@
     <br>
     <br>
     <br>
-    <img alt="Vue logo" src="../assets/guang.png">
+    <img alt="Vue logo" src="../img/guang.png">
     <br>
     <h1>{{ msg }}</h1>
     <p>
       For the detail code and how to configure this project, <br>
-      check out 
+      check out
       <a href="https://github.com/Ztrura/db_project" target="_blank" rel="noopener">our github repository</a>.
     </p>
     <h3>Members</h3>

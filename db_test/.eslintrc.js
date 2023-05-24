@@ -7,6 +7,7 @@ module.exports = {
         'plugin:vue/vue3-essential',
         // '@vue/standard'
     ],
+
     parserOptions: {
         parser: '@babel/eslint-parser'
     },
@@ -15,3 +16,9 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
     }
 }
+
+// module.exports = {
+//     parser: '@typescript-eslint/parser',
+//     plugins: ['@typescript-eslint'],
+//     rules: {},
+// }
