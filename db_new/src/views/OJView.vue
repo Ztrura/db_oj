@@ -62,10 +62,12 @@
   </div>
 </el-col>
 </el-row>
+<el-row>
 <div class="others" style="text-align: left">
-  <h4>结果：</h4>
-  <h4>详述：</h4>
+  <!-- <h4>结果：</h4>
+  <h4>详述：</h4> -->
 </div>
+</el-row>
 </template>
 
 <style scoped>
@@ -108,69 +110,69 @@ export default {
 import { ref } from 'vue'
 const input = ref('')
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const textarea = ref('')
+// const textarea = ref('')
 
 const ListOfQuestions = [
   {
     number: '1-1:question1',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   },
   {
     number: '1-2:question2',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   },
   {
     number: '1-3:question3',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   },
   {
     number: '1-4:question4',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   },
   {
     number: '1-5:question5',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   },
   {
     number: '1-6:question6',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   },
   {
     number: '1-7:question7',
-    date0: '2016-05-03',
+    date0: '2023-05-03',
     score0: '2',
     Handed: '已交卷',
-    date1: '2016-05-03',
+    date1: '2023-05-03',
     score1: '2',
     state: '按时完成'
   }
@@ -205,35 +207,35 @@ const ListOfTables = [
 
 const History = [
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   },
   {
-    date: '2016-05-03',
+    date: '2023-05-03',
     sql: 'create table_1 as select ...'
   }
 ]

@@ -3,7 +3,8 @@
     <br>
     <br>
     <br>
-    <img alt="Vue logo" src="../img/guang.png">
+    <!-- <img alt="Vue logo" src="../img/guang.png"> -->
+    <img alt="Vue logo" src="../img/cloud0.png">
     <br>
     <h1>{{ msg }}</h1>
     <p>
