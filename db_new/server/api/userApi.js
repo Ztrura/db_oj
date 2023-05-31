@@ -118,7 +118,12 @@ router.post('/getTable', (req, res) => {
         // const params = req.body
         // console.log(req.body.tname)
         // const sqlParams = [params.tname]
+        // let tmp = req.body.tname
+        // if (tmp.substring(0, 3) == "pub") {
+        //     tmp = '\'' + tmp + '\''
+        // }
     const newsql = sql + req.body.tname
+        // const newsql = sql + tmp
     console.log('>>', newsql)
     conn.query(newsql, function(err, result) {
         if (err) {
@@ -168,6 +173,50 @@ router.post('/getHistory', (req, res) => {
         console.log(result)
         res.send(result)
     })
+})
+
+router.post('/getAllTables', (req, res) => {
+    console.log('getAllTables')
+    console.log(req.body)
+    const sql = 'select table_name from information_schema.tables where table_schema = \'students\' and table_name <> \'question\' and table_name <> \'history\' and table_name not like \'answer\%\''
+    console.log(sql)
+    conn.query(sql, function(err, result) {
+        if (err) {
+            res.send(err)
+        }
+        if (result) {
+            res.send(result)
+        }
+    })
+})
+
+router.post('/submit', (req, res) => {
+    console.log('submit')
+    console.log(req.body)
+    const Params = req.body
+        // const sql = 'select answer from question where pid = ?'
+    const sqlParams = [Params.pid]
+    const answerSizeSQL = 'select count(*) from sanswer' + sqlParams
+        // const stdSizeSQL = 'select count(*) from std_answer'
+    const stdSizeSQL = 'select count(*) from answer' + sqlParams
+    var answerSize, stdSize
+    conn.query(answerSizeSQL, function(err, result) {
+        if (result) {
+            answerSize = result[0]
+        }
+    })
+    conn.query(stdSizeSQL, function(err, result) {
+        if (result) {
+            stdSize = result[0]
+        }
+    })
+    if (answerSize === stdSize) {
+        res.send('success')
+    } else {
+        res.send('fail')
+    }
+    // std_answer generated
+    console.log('success')
 })
 
 module.exports = router
